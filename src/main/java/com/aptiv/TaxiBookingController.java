@@ -16,7 +16,7 @@ public class TaxiBookingController {
     MockedWorld mockedWorld = MockedWorld.getInstance();
 
     @PostMapping("/api/book")
-    public @ResponseBody BookTaxi bookTaxi(@RequestBody Map<String, Map<String, String>> body) {
+    public @ResponseBody BookTaxiResponse bookTaxi(@RequestBody Map<String, Map<String, String>> body) {
         int sourceX = Integer.parseInt(body.get("source").get("x"));
         int sourceY = Integer.parseInt(body.get("source").get("y"));
         int destX = Integer.parseInt(body.get("destination").get("x"));

@@ -7,6 +7,8 @@ How to Build and Execute:
 Just click Run inside IntelliJ and wait until server starts: Listen on port 8080.
 
 2. On Mac Download an app called Advanced REST client(ARC) or Postman.
+For ARC: https://install.advancedrestclient.com/install
+
 For POST method:
 In Request URL field, fill in: http://localhost:8080/api/book
 
