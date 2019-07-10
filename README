@@ -1,0 +1,34 @@
+The TaxiBooking API I implemented is using Spring Boot to build the REST API.
+I use IntelliJ IDEA for development. Services is written in JAVA. And I use MAVEN to create the application.
+
+
+How to Build and Execute:
+1. Start the Server.
+Just click Run inside IntelliJ and wait until server starts: Listen on port 8080.
+
+2. On Mac Download an app called Advanced REST client(ARC) or Postman.
+For POST method:
+In Request URL field, fill in: http://localhost:8080/api/book
+
+In Parameters field, fill in Header information:
+Body content type: select application/json
+Editor view: select Raw input.
+
+In Body field, Enter the source and destination you want.
+Ex: {
+      "source": {
+        "x": 9,
+        "y": 8
+      },
+      "destination": {
+        "x": 21,
+        "y": 80
+      }
+    }
+
+And click SEND. You will see the expected response!!
+
+The same for api/tick, api/reset
+
+Besides, I add one GET request for you to get the information for all taxis: /api/taxi
+
